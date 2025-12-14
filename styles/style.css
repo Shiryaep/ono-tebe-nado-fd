@@ -21,36 +21,45 @@
   padding: 92px 50px 96px 50px;
 }
 
-.header-logo {
+.header__logo {
   width: 138px;
   height: 105px;
 }
 
-.header-nav {
+.header__menu {
   display: flex;
   flex-direction: row;
 }
 
-.header-nav-list {
+.header__links-list {
   display: flex;
   gap: 33px;
-  list-style: circle;
   font-size: 18px;
-  text-underline-offset: 4px;
 }
 
-.header-nav-first-item {
+.header__links-list-item_no-bullit {
   list-style: none;
 }
 
-.header-nav-active-link {
+.header__links-list-item {
+  list-style: circle;
+}
+
+.header__link {
+  text-underline-offset: 4px;
+}
+
+.header__link_active {
   text-decoration: none;
 }
 
-.header-address {
+.header__address {
+  justify-self: end;
+}
+
+.address {
   max-width: 240px;
   font-size: 18px;
-  justify-self: end;
   font-style: normal;
   text-underline-offset: 4px;
   line-height: 24px;
