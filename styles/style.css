@@ -22,7 +22,7 @@
 }
 
 .header-logo {
-  width: 148px;
+  width: 138px;
   height: 105px;
 }
 
@@ -33,7 +33,7 @@
 
 .header-nav-list {
   display: flex;
-  gap: 32px;
+  gap: 33px;
   list-style: circle;
   font-size: 18px;
   text-underline-offset: 4px;
@@ -45,4 +45,13 @@
 
 .header-nav-active-link {
   text-decoration: none;
+}
+
+.header-address {
+  max-width: 240px;
+  font-size: 18px;
+  justify-self: end;
+  font-style: normal;
+  text-underline-offset: 4px;
+  line-height: 24px;
 }
