@@ -1,1 +1,48 @@
 /* место для вашего кода */
+.cover {
+  background: url('../images/cover.jpg');
+}
+
+.lots-film {
+  background: url('../images/card-lot-01.jpg');
+}
+.lots-book {
+  background: url('../images/card-lot-02.jpg');
+}
+
+.lots-painting {
+  background: url('../images/card-lot-03.jpg');
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  align-items: center;
+  padding: 92px 50px 96px 50px;
+}
+
+.header-logo {
+  width: 148px;
+  height: 105px;
+}
+
+.header-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.header-nav-list {
+  display: flex;
+  gap: 32px;
+  list-style: circle;
+  font-size: 18px;
+  text-underline-offset: 4px;
+}
+
+.header-nav-first-item {
+  list-style: none;
+}
+
+.header-nav-active-link {
+  text-decoration: none;
+}
