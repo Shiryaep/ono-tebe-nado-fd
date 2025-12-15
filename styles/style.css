@@ -1,6 +1,10 @@
 /* место для вашего кода */
-.cover {
-  background: url('../images/cover.jpg');
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: rgb(0 0 0 / 0.6);
 }
 
 .lots-film {
@@ -61,6 +65,44 @@
   max-width: 240px;
   font-size: 18px;
   font-style: normal;
-  text-underline-offset: 4px;
   line-height: 24px;
+  text-underline-offset: 4px;
+}
+
+.cover {
+  position: relative;
+  z-index: 0;
+  min-height: 757px;
+  background: url('../images/cover.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 165px 50px 50px 50px;
+}
+
+.cover__header {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  width: 100%;
+}
+
+.cover__header-text {
+  color: rgb(255 255 255);
+  font-weight: 700;
+  font-size: 100px;
+  line-height: 1.15;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  display: block;
+  padding: 0;
+}
+
+.cover__header-middle {
+  margin-left: 30px;
+  text-align: center;
+}
+
+.cover__header-end {
+  margin-right: -30px;
+  text-align: right;
 }
