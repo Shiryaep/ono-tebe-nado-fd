@@ -1,4 +1,8 @@
 /* место для вашего кода */
+.major-text {
+  color: rgb(255 255 255);
+  text-transform: uppercase;
+}
 
 .overlay {
   position: absolute;
@@ -77,22 +81,23 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 165px 50px 50px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .cover__header {
   display: flex;
   flex-direction: column;
-  gap: 22px;
+  gap: 20px;
   width: 100%;
 }
 
 .cover__header-text {
-  color: rgb(255 255 255);
   font-weight: 700;
   font-size: 100px;
   line-height: 1.15;
   letter-spacing: 0.3em;
-  text-transform: uppercase;
   display: block;
   padding: 0;
 }
@@ -105,4 +110,31 @@
 .cover__header-end {
   margin-right: -30px;
   text-align: right;
+}
+
+.cover__description {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cover__description-text {
+  line-height: 28px;
+  font-size: 22px;
+}
+
+.letter-spacing-extended-small {
+  word-spacing: 18px;
+}
+
+.letter-spacing-extended-big {
+  word-spacing: 20px;
+}
+
+.bet-button {
+  min-height: 51px;
+  min-width: 256px;
+  background: transparent;
+  border: 1px solid rgb(255 255 255);
+  font-size: 22px;
 }
