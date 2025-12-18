@@ -11,20 +11,15 @@
   background: rgb(0 0 0 / 0.6);
 }
 
-.lots-film {
+.card_type_film {
   background: url('../images/card-lot-01.jpg');
 }
-.lots-book {
+.card_type_book {
   background: url('../images/card-lot-02.jpg');
 }
 
-.lots-painting {
+.card_type_picture {
   background: url('../images/card-lot-03.jpg');
-}
-
-.lots-picture {
-  background-size: cover;
-  background-position: center;
 }
 
 .header {
@@ -145,18 +140,18 @@
   font-size: 22px;
 }
 
-.lots__list-item {
+.lots__card-list-item {
   width: 334px;
   min-height: 596px;
   display: flex;
 }
 
-.lots__list-item-a {
+.card-link {
   height: 100%;
   text-decoration: none;
 }
 
-.lots__list-item-article {
+.card {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -164,9 +159,11 @@
   padding: 48px 40px;
   position: relative;
   z-index: 0;
+  background-size: cover;
+  background-position: center;
 }
 
-.lots__unordered-list {
+.lots__card-list {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -176,14 +173,15 @@
   margin-bottom: 30px;
 }
 
-.lots__header-text {
+.card__title {
   font-size: 22px;
   font-weight: bold;
   line-height: 120%;
   text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
-.lots__regular-text {
+.card__text {
   color: rgb(255 255 255);
   font-size: 20px;
   line-height: 120%;
@@ -193,15 +191,99 @@
   padding: 180px 24px 120px 24px;
 }
 
-.lots__header {
+.lots__heading {
   margin-left: 40px;
   margin-bottom: 27px;
   font-size: 40px;
   text-transform: uppercase;
 }
 
-.lots__footer {
+.lots__look-more-link {
   margin-left: 40px;
   font-size: 20px;
   text-underline-position: under;
+}
+
+.about {
+  padding: 0 24px 180px 24px;
+}
+
+.about__column {
+  display: grid;
+  grid-template-columns: 334px auto;
+  justify-items: center;
+}
+
+.about__logo {
+  margin-top: 35px;
+  height: 240px;
+  width: 240px;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  place-content: center space-between;
+}
+
+.about__logo-image {
+  display: flex;
+  height: 114px;
+  min-width: 148px;
+
+}
+
+.about__title {
+  padding: 136px 0 100px 25px;
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.about__text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 25px;
+  gap: 24px;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-height: 180px;
+  padding: 0 50px;
+}
+
+.footer__menu {
+  justify-self: center;
+}
+
+.footer__menu-list {
+  list-style: none;
+  text-align: center;
+}
+
+.footer__menu-list-item {
+  font-size: 18px;
+}
+
+.footer__menu-link {
+  text-underline-position: under;
+}
+
+.footer__menu-link_active {
+  text-decoration: none;
+}
+
+.footer__social-list {
+  justify-self: end;
+  list-style: none;
+  display: flex;
+  gap: 48px;
+}
+
+.footer__social-icon {
+  height: 48px;
+  width: 48px;
 }
