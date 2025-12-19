@@ -11,15 +11,12 @@
   background: rgb(0 0 0 / 0.6);
 }
 
-.card_type_film {
-  background: url("../images/card-lot-01.jpg");
-}
-.card_type_book {
-  background: url("../images/card-lot-02.jpg");
-}
-
-.card_type_picture {
-  background: url("../images/card-lot-03.jpg");
+.address {
+  max-width: 240px;
+  font-size: 18px;
+  font-style: normal;
+  line-height: 24px;
+  text-underline-offset: 4px;
 }
 
 .header {
@@ -27,11 +24,6 @@
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
   padding: 92px 50px 96px 50px;
-}
-
-.header__logo {
-  width: 138px;
-  height: 105px;
 }
 
 .header__menu {
@@ -61,16 +53,13 @@
   text-decoration: none;
 }
 
-.header__address {
-  justify-self: end;
+.header__logo {
+  width: 138px;
+  height: 105px;
 }
 
-.address {
-  max-width: 240px;
-  font-size: 18px;
-  font-style: normal;
-  line-height: 24px;
-  text-underline-offset: 4px;
+.header__address {
+  justify-self: end;
 }
 
 .cover {
@@ -122,6 +111,7 @@
 .cover__description-text {
   font-size: 22px;
   line-height: 28px;
+  word-spacing: 18.5px;
 }
 
 .letter-spacing-extended-small {
@@ -138,6 +128,28 @@
   border: 1px solid rgb(255 255 255);
   font-size: 22px;
   background: transparent;
+  cursor: pointer;
+}
+
+.lots {
+  padding: 180px 24px 120px 24px;
+}
+
+.lots__heading {
+  margin-bottom: 27px;
+  margin-left: 40px;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.lots__card-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 0;
+  list-style: none;
 }
 
 .lots__card-list-item {
@@ -149,6 +161,18 @@
 .card-link {
   height: 100%;
   text-decoration: none;
+}
+
+.card_type_film {
+  background: url("../images/card-lot-01.jpg");
+}
+
+.card_type_book {
+  background: url("../images/card-lot-02.jpg");
+}
+
+.card_type_picture {
+  background: url("../images/card-lot-03.jpg");
 }
 
 .card {
@@ -163,16 +187,6 @@
   background-size: cover;
 }
 
-.lots__card-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  margin: 0;
-  margin-bottom: 30px;
-  padding: 0;
-  list-style: none;
-}
-
 .card__title {
   font-weight: bold;
   font-size: 22px;
@@ -185,17 +199,6 @@
   color: rgb(255 255 255);
   font-size: 20px;
   line-height: 120%;
-}
-
-.lots {
-  padding: 180px 24px 120px 24px;
-}
-
-.lots__heading {
-  margin-bottom: 27px;
-  margin-left: 40px;
-  font-size: 40px;
-  text-transform: uppercase;
 }
 
 .lots__look-more-link {
@@ -250,8 +253,7 @@
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  min-height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 82px;
 }
 
 .footer__menu {
